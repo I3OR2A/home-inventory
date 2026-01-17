@@ -1,50 +1,70 @@
-# Welcome to your Expo app 👋
+# Home Inventory / 家用庫存
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+用手機快速記錄家中用品庫存，搭配「低水位提醒」與本機通知，避免出門才發現缺貨。
 
-## Get started
+![Expo](https://img.shields.io/badge/Expo-54-000000?style=flat&logo=expo)
+![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Android%20%7C%20Web-0f1115?style=flat)
+![SQLite](https://img.shields.io/badge/Storage-SQLite-003b57?style=flat&logo=sqlite)
 
-1. Install dependencies
+## Features
 
-   ```bash
-   npm install
-   ```
+- 品項管理：新增/刪除/編輯品項，支援數量加減與低水位 `min_qty`
+- 位置管理：新增/編輯/刪除位置，品項可關聯位置
+- 快沒了清單：低於 `min_qty` 自動顯示提醒，支援排序/篩選
+- 首頁總覽：品項數、待補貨數、區域摘要、最近一週新增清單
+- 建議品項：輸入品名時自動帶入低水位與位置
+- 本機通知：每日多時段提醒 + 一鍵立即提醒
+- 全資料本機化：使用 SQLite 儲存資料與設定
 
-2. Start the app
+## Demo / Screenshots
 
-   ```bash
-   npx expo start
-   ```
+- TODO: 加入實際截圖（建議放在 `assets/screenshots/`）
 
-In the output, you'll find options to open the app in a
+## Getting Started
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### Prerequisites
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Node.js 18+ (建議 LTS)
+- npm 9+
+- Expo CLI (使用 `npx expo`)
+- iOS/Android 模擬器或實機（通知功能建議實機測試）
 
-## Get a fresh project
-
-When you're ready, run:
+### Installation
 
 ```bash
-npm run reset-project
+git clone <your-repo-url>
+cd home-inventory
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Usage
 
-## Learn more
+```bash
+npm start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+或使用下列指令：
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npm run ios
+npm run android
+npm run web
+```
 
-## Join the community
+### 通知功能說明
 
-Join our community of developers creating universal apps.
+- 「待補貨」頁面可新增多個每日提醒時間
+- 「一鍵立即提醒」會把目前快沒了清單推播到本機通知
+- Web 不支援本機通知；iOS 通知需在實機上測試
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Contributing
+
+歡迎提交 Issue 或 Pull Request。建議流程：
+
+1. Fork 專案並建立分支
+2. 修改後執行 `npm run lint`
+3. 提交 PR，描述變更與測試方式
+
+## License
+
+尚未指定授權（TBD）。
