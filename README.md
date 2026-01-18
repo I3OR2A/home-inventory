@@ -18,10 +18,9 @@
 
 ## Demo / Screenshots
 
-![Home](assets/screenshots/HomeScreen.PNG)
-![Items](assets/screenshots/ItemsScreen.PNG)
-![Low Stock](assets/screenshots/LowStockScreen.PNG)
-![Locations](assets/screenshots/LocationsScreen.PNG)
+| Home | Items | Low Stock | Locations |
+| --- | --- | --- | --- |
+| <img src="assets/screenshots/HomeScreen.PNG" width="22%" height="auto" /> | <img src="assets/screenshots/ItemsScreen.PNG" width="22%" height="auto" /> | <img src="assets/screenshots/LowStockScreen.PNG" width="22%" height="auto" /> | <img src="assets/screenshots/LocationsScreen.PNG" width="22%" height="auto" /> |
 
 ## Getting Started
 
