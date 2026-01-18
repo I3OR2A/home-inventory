@@ -18,7 +18,10 @@
 
 ## Demo / Screenshots
 
-- TODO: 加入實際截圖（建議放在 `assets/screenshots/`）
+![Home](assets/screenshots/HomeScreen.PNG)
+![Items](assets/screenshots/ItemsScreen.PNG)
+![Low Stock](assets/screenshots/LowStockScreen.PNG)
+![Locations](assets/screenshots/LocationsScreen.PNG)
 
 ## Getting Started
 
@@ -56,14 +59,6 @@ npm run web
 - 「待補貨」頁面可新增多個每日提醒時間
 - 「一鍵立即提醒」會把目前快沒了清單推播到本機通知
 - Web 不支援本機通知；iOS 通知需在實機上測試
-
-## Contributing
-
-歡迎提交 Issue 或 Pull Request。建議流程：
-
-1. Fork 專案並建立分支
-2. 修改後執行 `npm run lint`
-3. 提交 PR，描述變更與測試方式
 
 ## License
 
